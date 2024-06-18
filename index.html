@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <img: scr=FORTES_LOGOMARCA.png>
+  <title>Projetos Sociais - Fortes Engenharia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+  
+<body>
+  <div class="container">
+    <h1>Projetos Sociais</h1>
+    
+    <section>
+      <h2>Aquecendo Vidas</h2>
+      <div>
+        <img src="AV.png" alt="Logotipo do Aquecendo Vidas">
+        <p>O programa Aquecendo Vidas, faz doações de cobertores nas localidades em que a Fortes atua, para projetos sociais que atendam pessoas em situação de rua e instituições de caridade que abrigam pessoas carentes e vulneráveis ao frio, também disponibiliza aos colaboradores para que doem a pessoas que precisam de agasalho e não tenham condições de adquirir o seu cobertor.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>McDia Feliz</h2>
+      <div>
+        <img src="MC.jpg" alt="Logotipo do McDia Feliz">
+        <p>O McDia Feliz é a maior campanha do país em prol de crianças e adolescentes em tratamento de câncer. Nesse dia, toda a venda de Big Mac realizada nos restaurantes McDonald’s de todo o país (exceto alguns impostos) é destinada a instituições que acolhem crianças e adolescentes com câncer. Aqui no Espírito Santo, a instituição contemplada é a ACACCI – Associação Capixaba Contra o Câncer Infantil. A Fortes apoia essa campanha adquirindo tíquetes, e para ampliar essa rede de solidariedade, os lanches comprados são distribuidos para instituições de apoio a crianças e adolescentes.</p>
+      </div>
+    </section>
+ 
+    <section>
+      <h2>ACACCI</h2>
+      <div>
+        <img src="ACA.jpg" alt="Logotipo da ACACCI">
+        <p>A Associação Capixaba Contra do Câncer Infantil (Acacci) oferece às crianças e aos adolescentes portadores de câncer, bem como às suas famílias, um programa de assistência integral.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Sobre as Campanhas</h2>
+      <div>
+        <p>As campanhas “Aquecendo Vidas”, “McDia Feliz” e o apoio à ACACCI são iniciativas solidárias que convergem no mesmo propósito: ajudar crianças e adolescentes com câncer. O “McDia Feliz” é um evento anual que destaca a venda do Big Mac como motor de arrecadação, onde os recursos obtidos são destinados a instituições como a ACACCI, que oferecem suporte vital aos jovens pacientes e suas famílias. A campanha “Aquecendo Vidas” complementa esse esforço com ações focadas em prover calor humano e apoio durante os períodos mais frios, reforçando a rede de solidariedade que se estende por todo o ano. Juntas, essas campanhas mobilizam pessoas, recursos e esperança, fortalecendo a luta contra o câncer infantil e juvenil e aquecendo corações.</p>
+      </div>
+    </section>
+    
+    <section>
+      <h2>Participe!</h2>
+      <div>
+        <p>Visite os Sites Oficiais: Procure pelos sites oficiais das campanhas ou das instituições apoiadas para obter informações atualizadas sobre como participar.</p>
+        <p>Participe do McDia Feliz: No dia da campanha, vá a um restaurante McDonald’s e compre um Big Mac. O valor arrecadado será destinado às instituições parceiras.</p>
+        <p>Doações Diretas: Faça doações diretamente às instituições como a ACACCI, seja em dinheiro, tempo como voluntário ou doando itens necessários.</p>
+        <p>Divulgação: Ajude a espalhar a palavra sobre as campanhas compartilhando informações nas redes sociais e em sua comunidade.</p>
+      </div>
+    </section>
+
+  </div>
+
+  
+  <aside>
+    <h3>Login</h3>
+    <button type="button" id="loginButton">Entrar</button>
+    <div id="loginForm" style="display:none;">
+      <form action="/caminho_para_autenticacao" method="post">
+        <label for="email">Nome de usuário ou e-mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Senha:</label>
+        <input type="password" id="password" name="password" required>
+
+        <input type="submit" value="Entrar como cliente">
+        <input type="submit" value="Entrar como funcionário">
+      </form>
+      <a href="/esqueci_minha_senha">Esqueci minha senha</a>
+      <a style="color: white;"</a>
+    </div>
+  
+    <h3>Registro</h3>
+        <button type="button" id="registerButton">Registrar</button>
+        <div id="registerForm" style="display:none;">
+          <form action="/path_to_registration" method="post">
+            <label for="fullname">Nome completo:</label>
+            <input type="text" id="fullname" name="fullname" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="reg_email" name="email" required>
+
+            <label for="cpf_cnpj">CPF ou CNPJ:</label>
+            <input type="text" id="cpf_cnpj" name="cpf_cnpj" required>
+
+            <label for="password">Senha:</label>
+            <input type="password" id="reg_password" name="password" required>
+
+            <label for="confirm_password">Confirmação de Senha:</label>
+            <input type="password" id="confirm_password" name="confirm_password" required>
+
+            <input type="submit" value="Registrar">
+          </form>
+        </div>
+
+    <script>
+      function toggleForm(formId) {
+        var form = document.getElementById(formId);
+        form.style.display = form.style.display === 'block' ? 'none' : 'block';
+      }
+      document.getElementById('loginButton').addEventListener('click', function() {
+        toggleForm('loginForm');
+        document.getElementById('registerForm').style.display = 'none'; 
+      });
+      document.getElementById('registerButton').addEventListener('click', function() {
+        toggleForm('registerForm');
+        document.getElementById('loginForm').style.display = 'none'; 
+      });
+      </script>
+
+    
+  </aside>
+</body>
+
+</html>
